@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import fi.jyu.mit.fxgui.ListChooser?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -21,12 +20,12 @@
    <bottom>
       <HBox spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <Button text="_Uusi">
+            <Button text="_OK">
                <tooltip>
-                  <Tooltip text="Uuden oston lisääminen" />
+                  <Tooltip text="Uuden oston vahvistaminen" />
                </tooltip>
             </Button>
-            <Button mnemonicParsing="false" text="Tallenna" />
+            <Button mnemonicParsing="false" text="Cancel" />
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -59,14 +58,7 @@
       </MenuBar>
    </top>
    <left>
-      <BorderPane BorderPane.alignment="CENTER">
-         <top>
-            <Label text="Valuutat" BorderPane.alignment="CENTER" />
-         </top>
-         <center>
-            <ListChooser maxWidth="200.0" prefHeight="200.0" prefWidth="175.0" rivit="Bitcoin&#10;Ethereum&#10;Dogecoin" BorderPane.alignment="CENTER" />
-         </center>
-      </BorderPane>
+      <BorderPane BorderPane.alignment="CENTER" />
    </left>
    <center>
       <ScrollPane fitToWidth="true" BorderPane.alignment="CENTER">
@@ -89,12 +81,12 @@
                   <TextField text="Ethereum" GridPane.columnIndex="1" />
                   <Label text="Kurssi" GridPane.rowIndex="1" />
                   <Label text="Määrä" GridPane.rowIndex="2" />
-                  <TextField text="1500" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField text="1300" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <TextField text="1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label text="Päivämäärä" GridPane.rowIndex="4" />
-                  <TextField text="19.1.2023" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField text="7.1.2023" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   <Label text="Hinta" GridPane.rowIndex="3" />
-                  <TextField text="1500" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField text="1300" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                </children>
                <padding>
                   <Insets left="10.0" right="10.0" top="10.0" />
