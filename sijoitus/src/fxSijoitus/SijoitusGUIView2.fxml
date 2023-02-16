@@ -21,12 +21,12 @@
    <bottom>
       <HBox spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <Button text="_Uusi">
+            <Button onAction="#handleUusiOsto" text="_Uusi">
                <tooltip>
                   <Tooltip text="Uuden oston lisääminen" />
                </tooltip>
             </Button>
-            <Button mnemonicParsing="false" text="Tallenna" />
+            <Button mnemonicParsing="false" onAction="#handleTallenna" text="Tallenna" />
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -38,17 +38,17 @@
         <menus>
           <Menu mnemonicParsing="false" text="Tiedosto">
             <items>
-              <MenuItem mnemonicParsing="false" text="Tallenna">
+              <MenuItem mnemonicParsing="false" onAction="#handleTallenna" text="Tallenna">
                      <accelerator>
                         <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                      </accelerator>
                   </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Lopeta" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleLopeta" text="Lopeta" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Muokkaa">
+          <Menu mnemonicParsing="false" text="Muokkaa" onAction="#handleMuokkaaOsto">
             <items>
-              <MenuItem mnemonicParsing="false" text="Lisää valuutta" />
+              <MenuItem mnemonicParsing="false" onAction="#handleUusiOsto" text="Lisää valuutta"/>
                   <MenuItem mnemonicParsing="false" text="Poista valuutta..." />
             </items>
           </Menu>
