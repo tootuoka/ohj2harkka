@@ -17,9 +17,9 @@ public class SijoitusMain extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            final FXMLLoader ldr = new FXMLLoader(getClass().getResource("SijoitusGUIView2.fxml"));
+            final FXMLLoader ldr = new FXMLLoader(getClass().getResource("Paanakyma.fxml"));
             final Pane root = ldr.load();
-            final SijoitusGUIController sijoitusCtrl = (SijoitusGUIController) ldr.getController();
+            final PaanakymaController sijoitusCtrl = (PaanakymaController) ldr.getController();
             
             Scene scene = new Scene(root);
             scene.getStylesheets().add(getClass().getResource("sijoitus.css").toExternalForm());

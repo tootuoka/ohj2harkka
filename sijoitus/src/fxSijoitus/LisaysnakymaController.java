@@ -23,39 +23,18 @@ import javafx.scene.control.TextField;
  * @version 20.1.2023
  *
  */
-    public class PaanakymaController implements ModalControllerInterface<String> {
-    
-    @FXML private void handleTallenna() {
-        tallenna();
-    }
-    
-    @FXML private void handleLopeta() {
-        lopeta();        
-    }
-    
+    public class LisaysnakymaController implements ModalControllerInterface<String> {
+        
+    @FXML private TextField kentta_nimi;
+
     @FXML private void handleOK() {
         tallenna();        
     }
     
     
-    /**
-     * Käsitellään uuden oston lisääminen
-     */
-    @FXML private void handleUusiOsto() {    
-        ModalController.showModal(PaanakymaController.class.getResource("Lisaysnakyma.fxml"), "Osto", null, "");
-        // Dialogs.showMessageDialog("Tiedosto ei aukea");
-    }
-    
-    @FXML private void handlePoistaOsto() {
-        Dialogs.showMessageDialog("Vielä ei osata poistaa ostoa");
-    }
-    
-    @FXML private void handleTietoja() {
-        Dialogs.showMessageDialog("Ei osata vielä tietoja");
-    }
     
     @FXML private void handlePeruuta() {
-        ModalController.closeStage(null);
+        ModalController.closeStage(kentta_nimi);
     }
 
 

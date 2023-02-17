@@ -61,9 +61,8 @@ public class RekisterinNimiController implements ModalControllerInterface<String
      */
     
     public static String kysyNimi(Stage modalityStage, String oletus) {
-        return ModalController.showModal(RekisterinNimiController.class.getResource("RekisterinNimiView.fxml"),
+        return ModalController.showModal(RekisterinNimiController.class.getResource("RekisterinNimi.fxml"),
                 "Rekisteri",
-                modalityStage, oletus);
-                
+                modalityStage, oletus);                
     }
 }

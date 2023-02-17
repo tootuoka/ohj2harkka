@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxSijoitus.SijoitusGUIController">
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxSijoitus.PaanakymaController">
    <bottom>
       <HBox spacing="10.0" BorderPane.alignment="CENTER">
          <children>
@@ -46,15 +46,15 @@
                   <MenuItem mnemonicParsing="false" onAction="#handleLopeta" text="Lopeta" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Muokkaa" onAction="#handleMuokkaaOsto">
+          <Menu mnemonicParsing="false" text="Muokkaa">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#handleUusiOsto" text="Lisää valuutta"/>
-                  <MenuItem mnemonicParsing="false" text="Poista valuutta..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handlePoistaOsto" text="Poista valuutta..." />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Apua">
             <items>
-              <MenuItem mnemonicParsing="false" text="Tietoja" />
+              <MenuItem mnemonicParsing="false" onAction="#handleTietoja" text="Tietoja" />
             </items>
           </Menu>
         </menus>
